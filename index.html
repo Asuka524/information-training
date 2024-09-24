@@ -1,28 +1,16 @@
 <!doctype html>
-<html>
-    <head>
-        <link rel="'stylesheet" href="'style.css"/>
+
+<html lang="ja">
+    <head>    
+        <meta charset="utf-8">
+        <meta name="viewport content="width="device-widrth,initial-scale=1.0">
+        <title>ToDoリスト</title>
+        <script src="main.js" defer></script>
     </head>
-
-    <h1>hedding(表題1)</h1>
-    <h2>hedding(表題2)</h2>
-        <h3>hedding(表題3)</h3>
-    <h4>hedding(表題4)</h4>
-    <p>これは文章ですか</p>
-
-    <h1>information-traning</h1>
-    <h2>githubとは？</h2>
-    <storong>プログラムのバージョンアプリ</storong>
-    <p>プログラムを逐次覚えておいて、それをいつでも見直すことができる</p>
-
-    <h3>利点</h3>
-    <u1>
-        <li>バージョン管理が簡単にできる</li>
-        <li>共同編集が楽になる</li>
-    </u1>
-
-    <ol>
-        <li>aiueo</li>
-        <li>aiueo</li>
-    </ol>
+    <body>
+        <h1>toDoリスト</h1>
+        <input type="text" id="todoInput" placeholder="やることを入力">
+        <button onclick="addTodo()">追加</button>
+        <ul id="todoList"></ul>
+    </body>
 </html>
